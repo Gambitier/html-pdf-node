@@ -96,6 +96,7 @@ module.exports = () => {
 		await page.pdf({
 			path: pdfFilePath,
 			format: 'a4',
+			printBackground: true,
 		});
 
 		await browser.close();
